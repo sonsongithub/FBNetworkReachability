@@ -65,7 +65,6 @@
 {
     [self stopNotifier];
 	CFRelease(reachability_);
-	[super dealloc];
 }
 
 
@@ -152,16 +151,14 @@
 // call back function
 static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void* info)
 {
-	NSAutoreleasePool* myPool = [[NSAutoreleasePool alloc] init];
-	
-	FBNetworkReachability* noteObject = (FBNetworkReachability*)info;
-	[noteObject _updateConnectionModeWithFlags:flags];
-    NSLog(@"[INFO] Connection mode changed: %@ [%x]", noteObject, flags);
+	@autoreleasepool {
+		FBNetworkReachability* noteObject = (__bridge FBNetworkReachability*)info;
+		[noteObject _updateConnectionModeWithFlags:flags];
+		NSLog(@"[INFO] Connection mode changed: %@ [%x]", noteObject, flags);
 
-	[[NSNotificationCenter defaultCenter]
-		postNotificationName:FBNetworkReachabilityDidChangeNotification object:noteObject];
-
-	[myPool release];
+		[[NSNotificationCenter defaultCenter]
+			postNotificationName:FBNetworkReachabilityDidChangeNotification object:noteObject];
+	}
 }
 
 - (BOOL)startNotifier
@@ -171,7 +168,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
                       object:self];
     
 	BOOL ret = NO;
-	SCNetworkReachabilityContext context = {0, self, NULL, NULL, NULL};
+	SCNetworkReachabilityContext context = {0, (__bridge void*)self, NULL, NULL, NULL};
 	if(SCNetworkReachabilitySetCallback(reachability_, ReachabilityCallback, &context))
 	{
 		if(SCNetworkReachabilityScheduleWithRunLoop(

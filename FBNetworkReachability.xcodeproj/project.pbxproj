@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		145CA00A17054FD300FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */; };
+		145CA00B17054FD300FD3946 /* FBNetworkReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A0D1378B809009D78F0 /* FBNetworkReachabilityTests.m */; };
+		145CA00C1705507C00FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */; };
+		145CA00D1705507C00FD3946 /* FBNetworkReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A09F41378B809009D78F0 /* FBNetworkReachabilityAppDelegate.m */; };
+		145CA00E1705507C00FD3946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A09F11378B809009D78F0 /* main.m */; };
 		4C1A09E51378B809009D78F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E41378B809009D78F0 /* UIKit.framework */; };
 		4C1A09E71378B809009D78F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E61378B809009D78F0 /* Foundation.framework */; };
 		4C1A09E91378B809009D78F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E81378B809009D78F0 /* CoreGraphics.framework */; };
 		4C1A09EF1378B809009D78F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A09ED1378B809009D78F0 /* InfoPlist.strings */; };
-		4C1A09F21378B809009D78F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A09F11378B809009D78F0 /* main.m */; };
-		4C1A09F51378B809009D78F0 /* FBNetworkReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A09F41378B809009D78F0 /* FBNetworkReachabilityAppDelegate.m */; };
 		4C1A09F81378B809009D78F0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A09F61378B809009D78F0 /* MainWindow.xib */; };
 		4C1A09FF1378B809009D78F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E41378B809009D78F0 /* UIKit.framework */; };
 		4C1A0A001378B809009D78F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E61378B809009D78F0 /* Foundation.framework */; };
 		4C1A0A011378B809009D78F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E81378B809009D78F0 /* CoreGraphics.framework */; };
 		4C1A0A091378B809009D78F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A0A071378B809009D78F0 /* InfoPlist.strings */; };
 		4C1A0A0C1378B809009D78F0 /* FBNetworkReachabilityTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A0A0B1378B809009D78F0 /* FBNetworkReachabilityTests.h */; };
-		4C1A0A0E1378B809009D78F0 /* FBNetworkReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A0D1378B809009D78F0 /* FBNetworkReachabilityTests.m */; };
-		4C1A0A1F1378B847009D78F0 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */; };
-		4C1A0A201378B847009D78F0 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */; };
 		4C1A0A2D1378BA9D009D78F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A0A2C1378BA9D009D78F0 /* SystemConfiguration.framework */; };
 		4C1A0A981378E053009D78F0 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A0A971378E053009D78F0 /* RootViewController.xib */; };
 /* End PBXBuildFile section */
@@ -277,9 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A09F21378B809009D78F0 /* main.m in Sources */,
-				4C1A09F51378B809009D78F0 /* FBNetworkReachabilityAppDelegate.m in Sources */,
-				4C1A0A1F1378B847009D78F0 /* FBNetworkReachability.m in Sources */,
+				145CA00C1705507C00FD3946 /* FBNetworkReachability.m in Sources */,
+				145CA00D1705507C00FD3946 /* FBNetworkReachabilityAppDelegate.m in Sources */,
+				145CA00E1705507C00FD3946 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,8 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A0A0E1378B809009D78F0 /* FBNetworkReachabilityTests.m in Sources */,
-				4C1A0A201378B847009D78F0 /* FBNetworkReachability.m in Sources */,
+				145CA00A17054FD300FD3946 /* FBNetworkReachability.m in Sources */,
+				145CA00B17054FD300FD3946 /* FBNetworkReachabilityTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,10 +366,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBNetworkReachability/FBNetworkReachability-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "FBNetworkReachability/FBNetworkReachability-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -380,9 +382,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBNetworkReachability/FBNetworkReachability-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "FBNetworkReachability/FBNetworkReachability-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;
@@ -395,12 +399,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBNetworkReachability.app/FBNetworkReachability";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
@@ -417,12 +423,14 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBNetworkReachability.app/FBNetworkReachability";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Prefix.pch";
+				GCC_VERSION = "";
 				INFOPLIST_FILE = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
