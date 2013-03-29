@@ -129,9 +129,11 @@
 	BOOL isReachable = ((flags & kSCNetworkFlagsReachable) != 0);
 	BOOL needsConnection = ((flags & kSCNetworkFlagsConnectionRequired) != 0);
 	if (isReachable && !needsConnection) {
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
 		if ((flags & kSCNetworkReachabilityFlagsIsWWAN) != 0) {
 			return FBNetworkReachableWWAN;
 		}
+#endif
 		
 		if ([self _getIPAddressWiFilEnabled:YES]) {
 			return FBNetworkReachableWiFi;

@@ -25,8 +25,10 @@
 		145CA08B1705545600FD3946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0821705545600FD3946 /* InfoPlist.strings */; };
 		145CA08C1705545600FD3946 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0841705545600FD3946 /* MainMenu.xib */; };
 		145CA08E1705545600FD3946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA0881705545600FD3946 /* main.m */; };
-		145CA092170554DC00FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA091170554DC00FD3946 /* FBNetworkReachability.m */; };
 		145CA0961705551400FD3946 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145CA0951705551400FD3946 /* SystemConfiguration.framework */; };
+		145CA0991705606100FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA0981705606100FD3946 /* FBNetworkReachability.m */; };
+		145CA09A1705606100FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA0981705606100FD3946 /* FBNetworkReachability.m */; };
+		145CA09C1705609100FD3946 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145CA09B1705609100FD3946 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,9 +62,10 @@
 		145CA0861705545600FD3946 /* FBNetworkReachability_OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FBNetworkReachability_OSX-Info.plist"; path = "OSX/FBNetworkReachability_OSX-Info.plist"; sourceTree = SOURCE_ROOT; };
 		145CA0871705545600FD3946 /* FBNetworkReachability_OSX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FBNetworkReachability_OSX-Prefix.pch"; path = "OSX/FBNetworkReachability_OSX-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		145CA0881705545600FD3946 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OSX/main.m; sourceTree = SOURCE_ROOT; };
-		145CA090170554DC00FD3946 /* FBNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNetworkReachability.h; sourceTree = "<group>"; };
-		145CA091170554DC00FD3946 /* FBNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNetworkReachability.m; sourceTree = "<group>"; };
 		145CA0951705551400FD3946 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		145CA0971705606100FD3946 /* FBNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNetworkReachability.h; sourceTree = "<group>"; };
+		145CA0981705606100FD3946 /* FBNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNetworkReachability.m; sourceTree = "<group>"; };
+		145CA09B1705609100FD3946 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				145CA09C1705609100FD3946 /* SystemConfiguration.framework in Frameworks */,
 				145CA047170552E600FD3946 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +114,7 @@
 		145CA01C170552C900FD3946 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				145CA09B1705609100FD3946 /* SystemConfiguration.framework */,
 				145CA049170552E600FD3946 /* AppKit.framework */,
 				145CA04A170552E600FD3946 /* CoreData.framework */,
 				145CA04B170552E600FD3946 /* Foundation.framework */,
@@ -206,8 +211,8 @@
 		145CA08F170554DC00FD3946 /* FBNetworkReachability */ = {
 			isa = PBXGroup;
 			children = (
-				145CA090170554DC00FD3946 /* FBNetworkReachability.h */,
-				145CA091170554DC00FD3946 /* FBNetworkReachability.m */,
+				145CA0971705606100FD3946 /* FBNetworkReachability.h */,
+				145CA0981705606100FD3946 /* FBNetworkReachability.m */,
 			);
 			path = FBNetworkReachability;
 			sourceTree = "<group>";
@@ -309,7 +314,7 @@
 				145CA0731705543400FD3946 /* AppDelegate.m in Sources */,
 				145CA07B1705543400FD3946 /* main.m in Sources */,
 				145CA07C1705543400FD3946 /* ViewController.m in Sources */,
-				145CA092170554DC00FD3946 /* FBNetworkReachability.m in Sources */,
+				145CA0991705606100FD3946 /* FBNetworkReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +324,7 @@
 			files = (
 				145CA0891705545600FD3946 /* AppDelegate.m in Sources */,
 				145CA08E1705545600FD3946 /* main.m in Sources */,
+				145CA09A1705606100FD3946 /* FBNetworkReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
