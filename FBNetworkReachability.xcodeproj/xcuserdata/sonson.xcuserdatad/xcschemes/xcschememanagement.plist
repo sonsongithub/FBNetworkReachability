@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FBNetworkReachability.xcscheme_^#shared#^_</key>
+		<key>FBNetworkReachability_OSX.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FBNetworkReachability_iOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4C1A09DF1378B809009D78F0</key>
+		<key>145CA019170552C900FD3946</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4C1A09FD1378B809009D78F0</key>
+		<key>145CA044170552E600FD3946</key>
 		<dict>
 			<key>primary</key>
 			<true/>

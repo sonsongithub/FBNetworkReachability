@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C1A09DF1378B809009D78F0"
-               BuildableName = "FBNetworkReachability.app"
-               BlueprintName = "FBNetworkReachability"
+               BlueprintIdentifier = "145CA044170552E600FD3946"
+               BuildableName = "FBNetworkReachability_OSX.app"
+               BlueprintName = "FBNetworkReachability_OSX"
                ReferencedContainer = "container:FBNetworkReachability.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +28,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4C1A09FD1378B809009D78F0"
-               BuildableName = "FBNetworkReachabilityTests.octest"
-               BlueprintName = "FBNetworkReachabilityTests"
-               ReferencedContainer = "container:FBNetworkReachability.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C1A09DF1378B809009D78F0"
-            BuildableName = "FBNetworkReachability.app"
-            BlueprintName = "FBNetworkReachability"
+            BlueprintIdentifier = "145CA044170552E600FD3946"
+            BuildableName = "FBNetworkReachability_OSX.app"
+            BlueprintName = "FBNetworkReachability_OSX"
             ReferencedContainer = "container:FBNetworkReachability.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C1A09DF1378B809009D78F0"
-            BuildableName = "FBNetworkReachability.app"
-            BlueprintName = "FBNetworkReachability"
+            BlueprintIdentifier = "145CA044170552E600FD3946"
+            BuildableName = "FBNetworkReachability_OSX.app"
+            BlueprintName = "FBNetworkReachability_OSX"
             ReferencedContainer = "container:FBNetworkReachability.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -79,9 +69,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4C1A09DF1378B809009D78F0"
-            BuildableName = "FBNetworkReachability.app"
-            BlueprintName = "FBNetworkReachability"
+            BlueprintIdentifier = "145CA044170552E600FD3946"
+            BuildableName = "FBNetworkReachability_OSX.app"
+            BlueprintName = "FBNetworkReachability_OSX"
             ReferencedContainer = "container:FBNetworkReachability.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

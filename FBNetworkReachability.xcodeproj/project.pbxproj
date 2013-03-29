@@ -7,472 +7,565 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		145CA00A17054FD300FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */; };
-		145CA00B17054FD300FD3946 /* FBNetworkReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A0D1378B809009D78F0 /* FBNetworkReachabilityTests.m */; };
-		145CA00C1705507C00FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */; };
-		145CA00D1705507C00FD3946 /* FBNetworkReachabilityAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A09F41378B809009D78F0 /* FBNetworkReachabilityAppDelegate.m */; };
-		145CA00E1705507C00FD3946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A09F11378B809009D78F0 /* main.m */; };
-		4C1A09E51378B809009D78F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E41378B809009D78F0 /* UIKit.framework */; };
-		4C1A09E71378B809009D78F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E61378B809009D78F0 /* Foundation.framework */; };
-		4C1A09E91378B809009D78F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E81378B809009D78F0 /* CoreGraphics.framework */; };
-		4C1A09EF1378B809009D78F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A09ED1378B809009D78F0 /* InfoPlist.strings */; };
-		4C1A09F81378B809009D78F0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A09F61378B809009D78F0 /* MainWindow.xib */; };
-		4C1A09FF1378B809009D78F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E41378B809009D78F0 /* UIKit.framework */; };
-		4C1A0A001378B809009D78F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E61378B809009D78F0 /* Foundation.framework */; };
-		4C1A0A011378B809009D78F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A09E81378B809009D78F0 /* CoreGraphics.framework */; };
-		4C1A0A091378B809009D78F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A0A071378B809009D78F0 /* InfoPlist.strings */; };
-		4C1A0A0C1378B809009D78F0 /* FBNetworkReachabilityTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A0A0B1378B809009D78F0 /* FBNetworkReachabilityTests.h */; };
-		4C1A0A2D1378BA9D009D78F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1A0A2C1378BA9D009D78F0 /* SystemConfiguration.framework */; };
-		4C1A0A981378E053009D78F0 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A0A971378E053009D78F0 /* RootViewController.xib */; };
+		145CA01E170552C900FD3946 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145CA01D170552C900FD3946 /* UIKit.framework */; };
+		145CA020170552C900FD3946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145CA01F170552C900FD3946 /* Foundation.framework */; };
+		145CA022170552C900FD3946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145CA021170552C900FD3946 /* CoreGraphics.framework */; };
+		145CA047170552E600FD3946 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145CA046170552E600FD3946 /* Cocoa.framework */; };
+		145CA0731705543400FD3946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA0631705543400FD3946 /* AppDelegate.m */; };
+		145CA0741705543400FD3946 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0641705543400FD3946 /* Default-568h@2x.png */; };
+		145CA0751705543400FD3946 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0651705543400FD3946 /* Default.png */; };
+		145CA0761705543400FD3946 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0661705543400FD3946 /* Default@2x.png */; };
+		145CA0771705543400FD3946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0681705543400FD3946 /* InfoPlist.strings */; };
+		145CA0781705543400FD3946 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145CA06A1705543400FD3946 /* MainStoryboard_iPad.storyboard */; };
+		145CA0791705543400FD3946 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145CA06C1705543400FD3946 /* MainStoryboard_iPhone.storyboard */; };
+		145CA07B1705543400FD3946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA0701705543400FD3946 /* main.m */; };
+		145CA07C1705543400FD3946 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA0721705543400FD3946 /* ViewController.m */; };
+		145CA0891705545600FD3946 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA07E1705545600FD3946 /* AppDelegate.m */; };
+		145CA08A1705545600FD3946 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0801705545600FD3946 /* Credits.rtf */; };
+		145CA08B1705545600FD3946 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0821705545600FD3946 /* InfoPlist.strings */; };
+		145CA08C1705545600FD3946 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 145CA0841705545600FD3946 /* MainMenu.xib */; };
+		145CA08E1705545600FD3946 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA0881705545600FD3946 /* main.m */; };
+		145CA092170554DC00FD3946 /* FBNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 145CA091170554DC00FD3946 /* FBNetworkReachability.m */; };
+		145CA0961705551400FD3946 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145CA0951705551400FD3946 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4C1A0A021378B809009D78F0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C1A09D71378B808009D78F0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C1A09DF1378B809009D78F0;
-			remoteInfo = FBNetworkReachability;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		4C1A09E01378B809009D78F0 /* FBNetworkReachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBNetworkReachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C1A09E41378B809009D78F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4C1A09E61378B809009D78F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4C1A09E81378B809009D78F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4C1A09EC1378B809009D78F0 /* FBNetworkReachability-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBNetworkReachability-Info.plist"; sourceTree = "<group>"; };
-		4C1A09EE1378B809009D78F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C1A09F01378B809009D78F0 /* FBNetworkReachability-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBNetworkReachability-Prefix.pch"; sourceTree = "<group>"; };
-		4C1A09F11378B809009D78F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C1A09F31378B809009D78F0 /* FBNetworkReachabilityAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBNetworkReachabilityAppDelegate.h; sourceTree = "<group>"; };
-		4C1A09F41378B809009D78F0 /* FBNetworkReachabilityAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBNetworkReachabilityAppDelegate.m; sourceTree = "<group>"; };
-		4C1A09F71378B809009D78F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4C1A09FE1378B809009D78F0 /* FBNetworkReachabilityTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FBNetworkReachabilityTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C1A0A061378B809009D78F0 /* FBNetworkReachabilityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FBNetworkReachabilityTests-Info.plist"; sourceTree = "<group>"; };
-		4C1A0A081378B809009D78F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C1A0A0A1378B809009D78F0 /* FBNetworkReachabilityTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBNetworkReachabilityTests-Prefix.pch"; sourceTree = "<group>"; };
-		4C1A0A0B1378B809009D78F0 /* FBNetworkReachabilityTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBNetworkReachabilityTests.h; sourceTree = "<group>"; };
-		4C1A0A0D1378B809009D78F0 /* FBNetworkReachabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBNetworkReachabilityTests.m; sourceTree = "<group>"; };
-		4C1A0A1D1378B847009D78F0 /* FBNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNetworkReachability.h; sourceTree = "<group>"; };
-		4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNetworkReachability.m; sourceTree = "<group>"; };
-		4C1A0A2C1378BA9D009D78F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		4C1A0A971378E053009D78F0 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		145CA01A170552C900FD3946 /* FBNetworkReachability_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBNetworkReachability_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		145CA01D170552C900FD3946 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		145CA01F170552C900FD3946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		145CA021170552C900FD3946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		145CA045170552E600FD3946 /* FBNetworkReachability_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBNetworkReachability_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		145CA046170552E600FD3946 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		145CA049170552E600FD3946 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		145CA04A170552E600FD3946 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		145CA04B170552E600FD3946 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		145CA0621705543400FD3946 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = iOS/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		145CA0631705543400FD3946 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = iOS/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		145CA0641705543400FD3946 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "iOS/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		145CA0651705543400FD3946 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = iOS/Default.png; sourceTree = SOURCE_ROOT; };
+		145CA0661705543400FD3946 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "iOS/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		145CA0691705543400FD3946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		145CA06B1705543400FD3946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		145CA06D1705543400FD3946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		145CA06E1705543400FD3946 /* FBNetworkReachability_iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FBNetworkReachability_iOS-Info.plist"; path = "iOS/FBNetworkReachability_iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
+		145CA06F1705543400FD3946 /* FBNetworkReachability_iOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FBNetworkReachability_iOS-Prefix.pch"; path = "iOS/FBNetworkReachability_iOS-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		145CA0701705543400FD3946 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = iOS/main.m; sourceTree = SOURCE_ROOT; };
+		145CA0711705543400FD3946 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = iOS/ViewController.h; sourceTree = SOURCE_ROOT; };
+		145CA0721705543400FD3946 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = iOS/ViewController.m; sourceTree = SOURCE_ROOT; };
+		145CA07D1705545600FD3946 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = OSX/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		145CA07E1705545600FD3946 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = OSX/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		145CA0811705545600FD3946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
+		145CA0831705545600FD3946 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		145CA0851705545600FD3946 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
+		145CA0861705545600FD3946 /* FBNetworkReachability_OSX-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "FBNetworkReachability_OSX-Info.plist"; path = "OSX/FBNetworkReachability_OSX-Info.plist"; sourceTree = SOURCE_ROOT; };
+		145CA0871705545600FD3946 /* FBNetworkReachability_OSX-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FBNetworkReachability_OSX-Prefix.pch"; path = "OSX/FBNetworkReachability_OSX-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		145CA0881705545600FD3946 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = OSX/main.m; sourceTree = SOURCE_ROOT; };
+		145CA090170554DC00FD3946 /* FBNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBNetworkReachability.h; sourceTree = "<group>"; };
+		145CA091170554DC00FD3946 /* FBNetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBNetworkReachability.m; sourceTree = "<group>"; };
+		145CA0951705551400FD3946 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4C1A09DD1378B809009D78F0 /* Frameworks */ = {
+		145CA017170552C900FD3946 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A0A2D1378BA9D009D78F0 /* SystemConfiguration.framework in Frameworks */,
-				4C1A09E51378B809009D78F0 /* UIKit.framework in Frameworks */,
-				4C1A09E71378B809009D78F0 /* Foundation.framework in Frameworks */,
-				4C1A09E91378B809009D78F0 /* CoreGraphics.framework in Frameworks */,
+				145CA0961705551400FD3946 /* SystemConfiguration.framework in Frameworks */,
+				145CA01E170552C900FD3946 /* UIKit.framework in Frameworks */,
+				145CA020170552C900FD3946 /* Foundation.framework in Frameworks */,
+				145CA022170552C900FD3946 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C1A09FA1378B809009D78F0 /* Frameworks */ = {
+		145CA042170552E600FD3946 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A09FF1378B809009D78F0 /* UIKit.framework in Frameworks */,
-				4C1A0A001378B809009D78F0 /* Foundation.framework in Frameworks */,
-				4C1A0A011378B809009D78F0 /* CoreGraphics.framework in Frameworks */,
+				145CA047170552E600FD3946 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4C1A09D51378B808009D78F0 = {
+		145CA00F170552AC00FD3946 = {
 			isa = PBXGroup;
 			children = (
-				4C1A0A211378B86A009D78F0 /* FBNetworkReachability */,
-				4C1A09EA1378B809009D78F0 /* TestApplication */,
-				4C1A0A041378B809009D78F0 /* FBNetworkReachabilityTests */,
-				4C1A09E31378B809009D78F0 /* Frameworks */,
-				4C1A09E11378B809009D78F0 /* Products */,
+				145CA08F170554DC00FD3946 /* FBNetworkReachability */,
+				145CA023170552C900FD3946 /* iOS */,
+				145CA04C170552E600FD3946 /* OSX */,
+				145CA01B170552C900FD3946 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4C1A09E11378B809009D78F0 /* Products */ = {
+		145CA01B170552C900FD3946 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C1A09E01378B809009D78F0 /* FBNetworkReachability.app */,
-				4C1A09FE1378B809009D78F0 /* FBNetworkReachabilityTests.octest */,
+				145CA01A170552C900FD3946 /* FBNetworkReachability_iOS.app */,
+				145CA045170552E600FD3946 /* FBNetworkReachability_OSX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C1A09E31378B809009D78F0 /* Frameworks */ = {
+		145CA01C170552C900FD3946 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4C1A0A2C1378BA9D009D78F0 /* SystemConfiguration.framework */,
-				4C1A09E41378B809009D78F0 /* UIKit.framework */,
-				4C1A09E61378B809009D78F0 /* Foundation.framework */,
-				4C1A09E81378B809009D78F0 /* CoreGraphics.framework */,
+				145CA049170552E600FD3946 /* AppKit.framework */,
+				145CA04A170552E600FD3946 /* CoreData.framework */,
+				145CA04B170552E600FD3946 /* Foundation.framework */,
+				145CA046170552E600FD3946 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		145CA023170552C900FD3946 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				145CA0621705543400FD3946 /* AppDelegate.h */,
+				145CA0631705543400FD3946 /* AppDelegate.m */,
+				145CA0711705543400FD3946 /* ViewController.h */,
+				145CA0721705543400FD3946 /* ViewController.m */,
+				145CA024170552C900FD3946 /* Supporting Files */,
+				145CA0611705530900FD3946 /* Frameworks */,
+			);
+			name = iOS;
+			path = FBNetworkReachability_iOS;
+			sourceTree = "<group>";
+		};
+		145CA024170552C900FD3946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				145CA0641705543400FD3946 /* Default-568h@2x.png */,
+				145CA0651705543400FD3946 /* Default.png */,
+				145CA0661705543400FD3946 /* Default@2x.png */,
+				145CA0671705543400FD3946 /* en.lproj */,
+				145CA06E1705543400FD3946 /* FBNetworkReachability_iOS-Info.plist */,
+				145CA06F1705543400FD3946 /* FBNetworkReachability_iOS-Prefix.pch */,
+				145CA0701705543400FD3946 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		145CA04C170552E600FD3946 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				145CA07D1705545600FD3946 /* AppDelegate.h */,
+				145CA07E1705545600FD3946 /* AppDelegate.m */,
+				145CA0881705545600FD3946 /* main.m */,
+				145CA04D170552E600FD3946 /* Supporting Files */,
+				145CA01C170552C900FD3946 /* Frameworks */,
+			);
+			name = OSX;
+			path = FBNetworkReachability_OSX;
+			sourceTree = "<group>";
+		};
+		145CA04D170552E600FD3946 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				145CA07F1705545600FD3946 /* en.lproj */,
+				145CA0861705545600FD3946 /* FBNetworkReachability_OSX-Info.plist */,
+				145CA0871705545600FD3946 /* FBNetworkReachability_OSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		145CA0611705530900FD3946 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				145CA0951705551400FD3946 /* SystemConfiguration.framework */,
+				145CA01D170552C900FD3946 /* UIKit.framework */,
+				145CA01F170552C900FD3946 /* Foundation.framework */,
+				145CA021170552C900FD3946 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4C1A09EA1378B809009D78F0 /* TestApplication */ = {
+		145CA0671705543400FD3946 /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				4C1A09F31378B809009D78F0 /* FBNetworkReachabilityAppDelegate.h */,
-				4C1A09F41378B809009D78F0 /* FBNetworkReachabilityAppDelegate.m */,
-				4C1A09F61378B809009D78F0 /* MainWindow.xib */,
-				4C1A0A971378E053009D78F0 /* RootViewController.xib */,
-				4C1A09EB1378B809009D78F0 /* Supporting Files */,
+				145CA0681705543400FD3946 /* InfoPlist.strings */,
+				145CA06A1705543400FD3946 /* MainStoryboard_iPad.storyboard */,
+				145CA06C1705543400FD3946 /* MainStoryboard_iPhone.storyboard */,
 			);
-			name = TestApplication;
+			name = en.lproj;
+			path = iOS/en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		145CA07F1705545600FD3946 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				145CA0801705545600FD3946 /* Credits.rtf */,
+				145CA0821705545600FD3946 /* InfoPlist.strings */,
+				145CA0841705545600FD3946 /* MainMenu.xib */,
+			);
+			name = en.lproj;
+			path = OSX/en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		145CA08F170554DC00FD3946 /* FBNetworkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				145CA090170554DC00FD3946 /* FBNetworkReachability.h */,
+				145CA091170554DC00FD3946 /* FBNetworkReachability.m */,
+			);
 			path = FBNetworkReachability;
-			sourceTree = "<group>";
-		};
-		4C1A09EB1378B809009D78F0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C1A09EC1378B809009D78F0 /* FBNetworkReachability-Info.plist */,
-				4C1A09ED1378B809009D78F0 /* InfoPlist.strings */,
-				4C1A09F01378B809009D78F0 /* FBNetworkReachability-Prefix.pch */,
-				4C1A09F11378B809009D78F0 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4C1A0A041378B809009D78F0 /* FBNetworkReachabilityTests */ = {
-			isa = PBXGroup;
-			children = (
-				4C1A0A0B1378B809009D78F0 /* FBNetworkReachabilityTests.h */,
-				4C1A0A0D1378B809009D78F0 /* FBNetworkReachabilityTests.m */,
-				4C1A0A051378B809009D78F0 /* Supporting Files */,
-			);
-			path = FBNetworkReachabilityTests;
-			sourceTree = "<group>";
-		};
-		4C1A0A051378B809009D78F0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C1A0A061378B809009D78F0 /* FBNetworkReachabilityTests-Info.plist */,
-				4C1A0A071378B809009D78F0 /* InfoPlist.strings */,
-				4C1A0A0A1378B809009D78F0 /* FBNetworkReachabilityTests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4C1A0A211378B86A009D78F0 /* FBNetworkReachability */ = {
-			isa = PBXGroup;
-			children = (
-				4C1A0A1D1378B847009D78F0 /* FBNetworkReachability.h */,
-				4C1A0A1E1378B847009D78F0 /* FBNetworkReachability.m */,
-			);
-			name = FBNetworkReachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C1A09DF1378B809009D78F0 /* FBNetworkReachability */ = {
+		145CA019170552C900FD3946 /* FBNetworkReachability_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C1A0A111378B809009D78F0 /* Build configuration list for PBXNativeTarget "FBNetworkReachability" */;
+			buildConfigurationList = 145CA03E170552C900FD3946 /* Build configuration list for PBXNativeTarget "FBNetworkReachability_iOS" */;
 			buildPhases = (
-				4C1A09DC1378B809009D78F0 /* Sources */,
-				4C1A09DD1378B809009D78F0 /* Frameworks */,
-				4C1A09DE1378B809009D78F0 /* Resources */,
+				145CA016170552C900FD3946 /* Sources */,
+				145CA017170552C900FD3946 /* Frameworks */,
+				145CA018170552C900FD3946 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = FBNetworkReachability;
-			productName = FBNetworkReachability;
-			productReference = 4C1A09E01378B809009D78F0 /* FBNetworkReachability.app */;
+			name = FBNetworkReachability_iOS;
+			productName = FBNetworkReachability_iOS;
+			productReference = 145CA01A170552C900FD3946 /* FBNetworkReachability_iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4C1A09FD1378B809009D78F0 /* FBNetworkReachabilityTests */ = {
+		145CA044170552E600FD3946 /* FBNetworkReachability_OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C1A0A141378B809009D78F0 /* Build configuration list for PBXNativeTarget "FBNetworkReachabilityTests" */;
+			buildConfigurationList = 145CA05E170552E600FD3946 /* Build configuration list for PBXNativeTarget "FBNetworkReachability_OSX" */;
 			buildPhases = (
-				4C1A09F91378B809009D78F0 /* Sources */,
-				4C1A09FA1378B809009D78F0 /* Frameworks */,
-				4C1A09FB1378B809009D78F0 /* Resources */,
-				4C1A09FC1378B809009D78F0 /* ShellScript */,
+				145CA041170552E600FD3946 /* Sources */,
+				145CA042170552E600FD3946 /* Frameworks */,
+				145CA043170552E600FD3946 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4C1A0A031378B809009D78F0 /* PBXTargetDependency */,
 			);
-			name = FBNetworkReachabilityTests;
-			productName = FBNetworkReachabilityTests;
-			productReference = 4C1A09FE1378B809009D78F0 /* FBNetworkReachabilityTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			name = FBNetworkReachability_OSX;
+			productName = FBNetworkReachability_OSX;
+			productReference = 145CA045170552E600FD3946 /* FBNetworkReachability_OSX.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4C1A09D71378B808009D78F0 /* Project object */ = {
+		145CA010170552AC00FD3946 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = 4C1A09DA1378B808009D78F0 /* Build configuration list for PBXProject "FBNetworkReachability" */;
+			buildConfigurationList = 145CA013170552AC00FD3946 /* Build configuration list for PBXProject "FBNetworkReachability" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 4C1A09D51378B808009D78F0;
-			productRefGroup = 4C1A09E11378B809009D78F0 /* Products */;
+			mainGroup = 145CA00F170552AC00FD3946;
+			productRefGroup = 145CA01B170552C900FD3946 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C1A09DF1378B809009D78F0 /* FBNetworkReachability */,
-				4C1A09FD1378B809009D78F0 /* FBNetworkReachabilityTests */,
+				145CA019170552C900FD3946 /* FBNetworkReachability_iOS */,
+				145CA044170552E600FD3946 /* FBNetworkReachability_OSX */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4C1A09DE1378B809009D78F0 /* Resources */ = {
+		145CA018170552C900FD3946 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A09EF1378B809009D78F0 /* InfoPlist.strings in Resources */,
-				4C1A09F81378B809009D78F0 /* MainWindow.xib in Resources */,
-				4C1A0A981378E053009D78F0 /* RootViewController.xib in Resources */,
+				145CA0741705543400FD3946 /* Default-568h@2x.png in Resources */,
+				145CA0751705543400FD3946 /* Default.png in Resources */,
+				145CA0761705543400FD3946 /* Default@2x.png in Resources */,
+				145CA0771705543400FD3946 /* InfoPlist.strings in Resources */,
+				145CA0781705543400FD3946 /* MainStoryboard_iPad.storyboard in Resources */,
+				145CA0791705543400FD3946 /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C1A09FB1378B809009D78F0 /* Resources */ = {
+		145CA043170552E600FD3946 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1A0A091378B809009D78F0 /* InfoPlist.strings in Resources */,
-				4C1A0A0C1378B809009D78F0 /* FBNetworkReachabilityTests.h in Resources */,
+				145CA08A1705545600FD3946 /* Credits.rtf in Resources */,
+				145CA08B1705545600FD3946 /* InfoPlist.strings in Resources */,
+				145CA08C1705545600FD3946 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4C1A09FC1378B809009D78F0 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		4C1A09DC1378B809009D78F0 /* Sources */ = {
+		145CA016170552C900FD3946 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145CA00C1705507C00FD3946 /* FBNetworkReachability.m in Sources */,
-				145CA00D1705507C00FD3946 /* FBNetworkReachabilityAppDelegate.m in Sources */,
-				145CA00E1705507C00FD3946 /* main.m in Sources */,
+				145CA0731705543400FD3946 /* AppDelegate.m in Sources */,
+				145CA07B1705543400FD3946 /* main.m in Sources */,
+				145CA07C1705543400FD3946 /* ViewController.m in Sources */,
+				145CA092170554DC00FD3946 /* FBNetworkReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C1A09F91378B809009D78F0 /* Sources */ = {
+		145CA041170552E600FD3946 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145CA00A17054FD300FD3946 /* FBNetworkReachability.m in Sources */,
-				145CA00B17054FD300FD3946 /* FBNetworkReachabilityTests.m in Sources */,
+				145CA0891705545600FD3946 /* AppDelegate.m in Sources */,
+				145CA08E1705545600FD3946 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		4C1A0A031378B809009D78F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C1A09DF1378B809009D78F0 /* FBNetworkReachability */;
-			targetProxy = 4C1A0A021378B809009D78F0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		4C1A09ED1378B809009D78F0 /* InfoPlist.strings */ = {
+		145CA0681705543400FD3946 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C1A09EE1378B809009D78F0 /* en */,
+				145CA0691705543400FD3946 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		4C1A09F61378B809009D78F0 /* MainWindow.xib */ = {
+		145CA06A1705543400FD3946 /* MainStoryboard_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C1A09F71378B809009D78F0 /* en */,
+				145CA06B1705543400FD3946 /* en */,
 			);
-			name = MainWindow.xib;
+			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
-		4C1A0A071378B809009D78F0 /* InfoPlist.strings */ = {
+		145CA06C1705543400FD3946 /* MainStoryboard_iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C1A0A081378B809009D78F0 /* en */,
+				145CA06D1705543400FD3946 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		145CA0801705545600FD3946 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145CA0811705545600FD3946 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		145CA0821705545600FD3946 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145CA0831705545600FD3946 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		145CA0841705545600FD3946 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145CA0851705545600FD3946 /* en */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4C1A0A0F1378B809009D78F0 /* Debug */ = {
+		145CA014170552AC00FD3946 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		4C1A0A101378B809009D78F0 /* Release */ = {
+		145CA015170552AC00FD3946 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
-		4C1A0A121378B809009D78F0 /* Debug */ = {
+		145CA03F170552C900FD3946 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBNetworkReachability/FBNetworkReachability-Prefix.pch";
-				GCC_VERSION = "";
-				INFOPLIST_FILE = "FBNetworkReachability/FBNetworkReachability-Info.plist";
+				GCC_PREFIX_HEADER = "iOS/FBNetworkReachability_iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "iOS/FBNetworkReachability_iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		4C1A0A131378B809009D78F0 /* Release */ = {
+		145CA040170552C900FD3946 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBNetworkReachability/FBNetworkReachability-Prefix.pch";
-				GCC_VERSION = "";
-				INFOPLIST_FILE = "FBNetworkReachability/FBNetworkReachability-Info.plist";
+				GCC_PREFIX_HEADER = "iOS/FBNetworkReachability_iOS-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "iOS/FBNetworkReachability_iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		4C1A0A151378B809009D78F0 /* Debug */ = {
+		145CA05F170552E600FD3946 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBNetworkReachability.app/FBNetworkReachability";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Prefix.pch";
-				GCC_VERSION = "";
-				INFOPLIST_FILE = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
+				GCC_PREFIX_HEADER = "OSX/FBNetworkReachability_OSX-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "OSX/FBNetworkReachability_OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		4C1A0A161378B809009D78F0 /* Release */ = {
+		145CA060170552E600FD3946 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FBNetworkReachability.app/FBNetworkReachability";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Prefix.pch";
-				GCC_VERSION = "";
-				INFOPLIST_FILE = "FBNetworkReachabilityTests/FBNetworkReachabilityTests-Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					SenTestingKit,
-				);
+				GCC_PREFIX_HEADER = "OSX/FBNetworkReachability_OSX-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "OSX/FBNetworkReachability_OSX-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C1A09DA1378B808009D78F0 /* Build configuration list for PBXProject "FBNetworkReachability" */ = {
+		145CA013170552AC00FD3946 /* Build configuration list for PBXProject "FBNetworkReachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C1A0A0F1378B809009D78F0 /* Debug */,
-				4C1A0A101378B809009D78F0 /* Release */,
+				145CA014170552AC00FD3946 /* Debug */,
+				145CA015170552AC00FD3946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C1A0A111378B809009D78F0 /* Build configuration list for PBXNativeTarget "FBNetworkReachability" */ = {
+		145CA03E170552C900FD3946 /* Build configuration list for PBXNativeTarget "FBNetworkReachability_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C1A0A121378B809009D78F0 /* Debug */,
-				4C1A0A131378B809009D78F0 /* Release */,
+				145CA03F170552C900FD3946 /* Debug */,
+				145CA040170552C900FD3946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C1A0A141378B809009D78F0 /* Build configuration list for PBXNativeTarget "FBNetworkReachabilityTests" */ = {
+		145CA05E170552E600FD3946 /* Build configuration list for PBXNativeTarget "FBNetworkReachability_OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4C1A0A151378B809009D78F0 /* Debug */,
-				4C1A0A161378B809009D78F0 /* Release */,
+				145CA05F170552E600FD3946 /* Debug */,
+				145CA060170552E600FD3946 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4C1A09D71378B808009D78F0 /* Project object */;
+	rootObject = 145CA010170552AC00FD3946 /* Project object */;
 }
